@@ -6,5 +6,5 @@ if (process.env.CRAWL_INTERVAL === undefined || process.env.CRAWL_INTERVAL === n
 else{
     var crawl_interval = parseInt(process.env.CRAWL_INTERVAL);    
 }
-
+jobmodule.schedulepage();
 setInterval(jobmodule.schedulepage, crawl_interval * 1000 * 60);
